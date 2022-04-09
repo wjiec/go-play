@@ -1,0 +1,6 @@
+.PHONY: generate
+.DEFAULT_GOAL: generate
+generate:
+	@wire ./...
+	@echo
+	@go generate -run "go-play" ./...
